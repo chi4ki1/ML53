@@ -5,7 +5,7 @@ from flask import Flask, render_template, send_from_directory
 # Create an instance of the Flask class.
 # The template_folder and static_folder are set to the current directory
 # to match your file structure.
-app = Flask(__name__, template_folder='.', static_folder='.')
+app = Flask(_name_, template_folder='.', static_folder='.')
 
 # Define the root route ('/').
 @app.route('/')
@@ -34,7 +34,7 @@ def serve_assets(filename):
     return send_from_directory('assets', filename)
 
 # Ensure this block is executed only when the script is run directly.
-if __name__ == '__main__':
+if _name_ == '_main_':
     # Determine if debug mode should be enabled
     debug_mode = os.environ.get('FLASK_DEBUG') == '1'
 
