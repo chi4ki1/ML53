@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ML53 Commemoration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Intro Prompt -->
+        <section id="intro" class="view view--center bg-host">
+            <div class="crt">
+                <h1 class="prompt">Are you sure you want to continue?</h1>
+                <button id="btn-yes" class="btn">YES</button>
+            </div>
+        </section>
+
+        <!-- Loading Screen -->
+        <section id="loading" class="view view--center bg-host hidden">
+            <div class="spinner" aria-label="Loading"></div>
+            <p class="loading-text" data-text="Handshaking… Verifying…"></p>
+        </section>
+
+        <!-- Error Screen -->
+        <section id="error" class="view view--center bg-host hidden">
+            <div class="glitch" data-text="SYSTEM BREACH: FILES CORRUPTED.">SYSTEM BREACH: FILES CORRUPTED.</div>
+            <p class="sub">Integrity check failed. Memory sectors unreadable.</p>
+            <button id="btn-proceed" class="btn btn--ghost">proceed anyway</button>
+        </section>
+
+   
+        <main id="content" class="bg-host hidden">
+            <section class="section">
+                <h2 class="section__title">Martial Law Atrocities (1972–1986)</h2>
+                <div class="stats">
+                    <div class="stat"><span class="num">70,000+</span><span class="label">inaresto</span></div>
+                    <div class="stat"><span class="num">34,000+</span><span class="label">pinahirapan</span></div>
+                    <div class="stat"><span class="num">3,000+</span><span class="label">pinaslang</span></div>
+                </div>
+                <ul class="bullets">
+                    <li>Bilyon-bilyong piso ang ninakaw mula sa kaban ng bayan</li>
+                    <li>Pagsupil sa midya at paglabag sa karapatang pantao</li>
+                    <li>“Kapayapaan at kaayusan” ang ipinangako, ngunit takot at pasismo ang itinanim.</li>
+                </ul>
+                <figure class="media">
+                    <img src="assets/image2.avif" alt="Historical photo related to Martial Law">
+                    <figcaption class="media__caption">Never Again. Never Forget.</figcaption>
+                </figure>
+            </section>
+
+            <section class="section">
+                <h2 class="section__title">Katiwalian Ngayon</h2>
+                <ul class="bullets">
+                    <li>Flood control projects – bilyon ang nilustay, baha’y pinagkakitaan.</li>
+                    <li>Ghost projects & anomalous contracts – pondo ng taumbayan, bulsa ng iilan.</li>
+                    <li>Political dynasties – nagpapatuloy ang siklo ng kapangyarihan at pandarambong.</li>
+                </ul>
+                <p class="tagline">Noon at ngayon—iisa ang mukha ng korapsyon.</p>
+            </section>
+
+            <section class="section">
+                <h2 class="section__title">Huwag Kalimutan</h2>
+                <blockquote class="quote">“Ang kasaysayan ay hindi dapat mabura, baguhin, o i-reformat.”</blockquote>
+                <div class="final">
+                    <span>MARCOS NOON,</span>
+                    <span>MARCOS NGAYON,</span>
+                    <span>TATAK MAGNANAKAW.</span>
+                </div>
+            </section>
+
+            <div class="cta-wrapper">
+                <button id="btn-dont-click" class="btn btn--warning">Do not click this button.</button>
+            </div>
+        </main>
+
+		<!-- Modal -->
+		<div id="modal" class="modal modal--red hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <div class="modal__backdrop" data-close></div>
+            <div class="modal__dialog">
+                <button class="modal__close" aria-label="Close" data-close>✕</button>
+                <h3 id="modal-title">ML53 Commemoration</h3>
+                <div class="poster">
+                    <div class="poster__header">Never Again. Never Forget.</div>
+                    <div class="poster__body">
+                        <div class="row">🗓️ Petsa: <b>September 21, 2025</b></div>
+                        <div class="row">📍 Lugar ng Pagpupulong: <b>United Nations – Kalaw, LRT-1 Station</b></div>
+                        <div class="row">⏰ Call Time: <b>8:00 AM to 8:30 AM</b> – Pagtitipon</div>
+                        <div class="row">🪧 Kondukta: <b>Mula United Nations – Kalaw Station patungong Luneta Park.</b></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
